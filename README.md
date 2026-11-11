@@ -18,30 +18,39 @@ Configure Argo CD to automatically sync manifests from Git and deploy applicatio
 **Final Architecture**
 
 Developer
+
    ↓
    
 GitHub (Source Repo)
+
    ↓
    
 Jenkins Pipeline
+
    ↓
    
 Docker Build
+
    ↓
    
 AWS ECR
+
    ↓
    
 Update Deployment Repo
+
    ↓
    
 ArgoCD (GitOps)
+
    ↓
    
 Kubernetes (EKS)
+
    ↓
    
 LoadBalancer
+
    ↓
    
 Browser → HTML Website
