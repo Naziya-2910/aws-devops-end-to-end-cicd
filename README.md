@@ -1,4 +1,5 @@
-application-code
+Application-Code
+
 CI/CD Pipeline for Microservices with Jenkins, Docker & Argo CD on EKS
 “Designed and implemented a complete CI/CD pipeline for microservices deployment to Amazon EKS using Jenkins, Docker, and Argo CD, following a GitOps workflow with separate source and deployment repositories.”
 
