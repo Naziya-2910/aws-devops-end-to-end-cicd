@@ -15,24 +15,35 @@ Configure Argo CD to automatically sync manifests from Git and deploy applicatio
 
 1.Developer pushes code to the Source Repository. 2.Jenkins CI pipeline triggers, runs SonarQube code analysis, builds the Docker image, and pushes it to AWS ECR. 3.Jenkins updates the Kubernetes deployment.yaml with the new image tag and commits the change to the Deployment Repository. 4.Argo CD detects the update, syncs the manifests, and deploys the application to Amazon EKS.
 
-Final Architecture
+**Final Architecture**
+
 Developer
    ↓
+   
 GitHub (Source Repo)
    ↓
+   
 Jenkins Pipeline
    ↓
+   
 Docker Build
    ↓
+   
 AWS ECR
    ↓
+   
 Update Deployment Repo
    ↓
+   
 ArgoCD (GitOps)
    ↓
+   
 Kubernetes (EKS)
    ↓
+   
 LoadBalancer
    ↓
+   
 Browser → HTML Website
+
 5.The application becomes live on Kubernetes.
